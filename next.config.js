@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: 'lighter-doc',
+    basePath: '/lighter-doc',
     images: {
         unoptimized: true
     }
