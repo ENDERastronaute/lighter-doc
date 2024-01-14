@@ -2,7 +2,6 @@
 
 import styles from './index.module.scss';
 import { useEffect, useState } from 'react';
-import { fetchLatestRelease } from './server';
 import Link from 'next/link';
 
 export default function Header() {
@@ -10,9 +9,11 @@ export default function Header() {
 
     useEffect(() => {
         (async () => {
-            const release = await fetchLatestRelease();
+            const response = await fetch('https://api.github.com/repos/enderastronaute/lighter/releases/latest');
 
-            setLatestRelease(release);
+            const data = await response.json();
+
+            setLatestRelease(data.name);
         })();
     }, []);
 
