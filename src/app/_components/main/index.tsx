@@ -30,7 +30,7 @@ export default function Main() {
                     <div>
                         <span>
                             <h2>Full control over your project</h2>
-                            <p>Lighter makes it faster to create projects while still allowing the greatest control over what is done. With lighter you know what's done, nothing is magic.</p>
+                            <p>Lighter makes it faster to create projects while still allowing the greatest control over what is done. With lighter you know what is done, nothing is magic.</p>
                         </span>
 
                         <OutlinedBtn text='Learn more' href='/documentation#fullcontrol'></OutlinedBtn>
