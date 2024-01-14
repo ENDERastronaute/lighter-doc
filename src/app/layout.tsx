@@ -1,8 +1,6 @@
 
-import { Inter } from 'next/font/google'
+import { poppins } from '@/fonts'
 import './globals.scss'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -11,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }

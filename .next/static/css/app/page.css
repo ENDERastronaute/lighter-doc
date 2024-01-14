@@ -1,0 +1,229 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/button/filledBtn/index.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.filledBtn_btn__qQPZ9 {
+  border: none;
+  background-color: #fe654f;
+  text-decoration: none;
+  font-size: 1.2em;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filledBtn_btn__qQPZ9 span {
+  display: inline-block;
+  position: relative;
+  color: #f6fbff;
+}
+.filledBtn_btn__qQPZ9 span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #f6fbff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.filledBtn_btn__qQPZ9:hover span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/app/page.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_menu__X5YLE {
+  margin-top: 90px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6fbff;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+}
+.page_menu__X5YLE.page_active__tAjuN {
+  transform: scaleX(1);
+}
+
+.page_main__akH3E {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 20px 50px;
+  gap: 200px;
+  overflow: hidden;
+}
+.page_main__akH3E.page_off__vhwy5 {
+  height: 100vh;
+  overflow: hidden;
+}
+.page_main__akH3E .page_landing__kwEup {
+  width: 100%;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page_main__akH3E .page_landing__kwEup h1 {
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 2.6em;
+}
+.page_main__akH3E .page_landing__kwEup h1 span {
+  background: linear-gradient(to bottom, #fed18c, #fe654f);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_landing__kwEup h1 {
+    font-size: 5em;
+  }
+}
+.page_main__akH3E .page_landing__kwEup p {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_landing__kwEup p {
+    width: 40%;
+  }
+}
+.page_main__akH3E .page_landing__kwEup div {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .page_main__akH3E .page_landing__kwEup div .page_btn__8GLw4 {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_landing__kwEup div {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+.page_main__akH3E .page_exemples__x7gbB {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 100px;
+}
+.page_main__akH3E .page_exemples__x7gbB article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page_main__akH3E .page_exemples__x7gbB article div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.page_main__akH3E .page_exemples__x7gbB article div span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.page_main__akH3E .page_exemples__x7gbB article div span h2 {
+  font-size: 2em;
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_exemples__x7gbB article div {
+    width: 50%;
+    align-items: flex-start;
+  }
+}
+.page_main__akH3E .page_exemples__x7gbB article .page_image__0hLSR {
+  width: 50%;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_exemples__x7gbB article .page_image__0hLSR {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E .page_exemples__x7gbB article {
+    gap: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .page_main__akH3E {
+    padding: 0 50px 50px;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/button/outlinedBtn/index.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.outlinedBtn_btn__cZlD3 {
+  border: 2pt solid #fe654f;
+  background-color: #f6fbff;
+  text-decoration: none;
+  font-size: 1.2em;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outlinedBtn_btn__cZlD3 span {
+  display: inline-block;
+  position: relative;
+  color: #fe654f;
+}
+.outlinedBtn_btn__cZlD3 span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #fe654f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.outlinedBtn_btn__cZlD3:hover span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/header/index.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__KTVf_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe654f;
+  color: #f6fbff;
+}
+.header_header__KTVf_ a {
+  color: #f6fbff;
+}
