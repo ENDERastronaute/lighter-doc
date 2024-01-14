@@ -1,12 +1,12 @@
 
-import Header from "@/components/header"
 import Main from "./_components/main"
+import Info from "@/components/info"
 
 export default function Landing() {
 
     return (
         <>
-            <Header></Header>
+            <Info></Info>
             <Main></Main>
         </>
     )

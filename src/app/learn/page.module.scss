@@ -1,0 +1,15 @@
+
+@import '../../styles/vars.scss';
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    right: 100%;
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: $background-color-light;
+
+    &.active {
+        right: 0;
+    }
+}

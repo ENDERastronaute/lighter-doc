@@ -1,27 +1,18 @@
-'use client'
-
+import Image from "next/image";
+import logo from '@public/LighterLogo.svg';
 import styles from './index.module.scss';
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import MenuIcon from '@mui/icons-material/Menu';
 
-export default function Header() {
-    const [latestRelease, setLatestRelease] = useState<string | undefined>(undefined);
+interface HeaderProps {
+    showMenu: boolean;
+    handleMenu: () => void;
+}
 
-    useEffect(() => {
-        (async () => {
-            const response = await fetch('https://api.github.com/repos/enderastronaute/lighter/releases/latest');
-
-            const data = await response.json();
-
-            setLatestRelease(data.name);
-        })();
-    }, []);
-
+export default function Header({ showMenu, handleMenu }: HeaderProps) {
     return (
-        <>
-            {
-                latestRelease && <header className={styles.header}>{latestRelease} is out!&nbsp; <Link href='/documentation/v1.x'>Go check it out!</Link></header>
-            }
-        </>
+        <header className={styles.header}>
+            <h2><Image src={logo} alt="logo" width={50} height={50}></Image> Lighter</h2>
+            <button onClick={handleMenu}><MenuIcon className={styles.icon}></MenuIcon></button>
+        </header>
     )
 }

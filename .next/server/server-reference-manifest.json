@@ -1,22 +1,5 @@
 {
-  "node": {
-    "cc6708d5e3428547594826343e61fbaf4827b27d": {
-      "workers": {
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5Cdivers%5C%5Cprojets_persos%5C%5Clighter-doc%5C%5Csrc%5C%5Ccomponents%5C%5Cheader%5C%5Cserver.ts%22%2C%5B%22search%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/page": "rsc"
-      }
-    },
-    "4c4e647cec320c9567479a3c37e83e2c5bf15ba5": {
-      "workers": {
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5Cdivers%5C%5Cprojets_persos%5C%5Clighter-doc%5C%5Csrc%5C%5Ccomponents%5C%5Cheader%5C%5Cserver.ts%22%2C%5B%22fetchLatestRelease%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/page": "action-browser"
-      }
-    }
-  },
+  "node": {},
   "edge": {},
-  "encryptionKey": "q1tKJqD8/2EhU3W6sv0oxna77RWld/gEFxN6efh2+N0="
+  "encryptionKey": "VoVYGW9064HtG+uQFkQMdq/ni6a/mH8MP+vIbifzdBY="
 }

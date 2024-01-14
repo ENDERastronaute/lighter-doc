@@ -30,7 +30,7 @@ export default function Main() {
                     <div>
                         <span>
                             <h2>Full control over your project</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, pariatur? Suscipit, repellat similique ipsa aperiam consequuntur dolores numquam tempora, quo aspernatur inventore illo non explicabo necessitatibus doloribus commodi quos sunt!</p>
+                            <p>Lighter makes it faster to create projects while still allowing the greatest control over what is done. With lighter you know what's done, nothing is magic.</p>
                         </span>
 
                         <OutlinedBtn text='Learn more' href='/documentation#fullcontrol'></OutlinedBtn>
@@ -44,10 +44,11 @@ export default function Main() {
                     <div>
                         <span>
                             <h2>Customizable frontend</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint id autem blanditiis iure. Voluptate dolores velit praesentium. Ducimus fugit perspiciatis veritatis facere fuga commodi! Deleniti perspiciatis ipsum animi rem ex.</p>
+                            <p>Lighter allows you to use anything for your frontend. You can use React, NextJS or any other framework. Lighter even allows you to serve as a fast backend API for your mobile apps.
+                            </p>
                         </span>
 
-                        <OutlinedBtn text='Learn more' href='/documentation#custom'></OutlinedBtn>
+                        <OutlinedBtn text='Learn more' href='/documentation#frontend'></OutlinedBtn>
                     </div>
                 </article>
             </section>

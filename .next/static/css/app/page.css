@@ -141,13 +141,14 @@
 }
 .page_main__akH3E .page_exemples__x7gbB article div span {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 15px;
+  max-width: 800px;
 }
 .page_main__akH3E .page_exemples__x7gbB article div span h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 @media (min-width: 1024px) {
   .page_main__akH3E .page_exemples__x7gbB article div {
@@ -209,10 +210,10 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/header/index.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.header_header__KTVf_ {
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/info/index.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.info_header__Wz7ly {
   position: absolute;
   top: 0;
   left: 0;
@@ -224,6 +225,6 @@
   background-color: #fe654f;
   color: #f6fbff;
 }
-.header_header__KTVf_ a {
+.info_header__Wz7ly a {
   color: #f6fbff;
 }
