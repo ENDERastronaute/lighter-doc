@@ -8,6 +8,7 @@
   height: 90px;
   width: 100%;
   padding: 0 10px;
+  border-bottom: 1pt solid #fe654f;
 }
 .header_header__KTVf_ h2 {
   display: flex;
@@ -30,17 +31,147 @@
   height: 48px;
   width: 48px;
 }
+@media (min-width: 1024px) {
+  .header_header__KTVf_ button {
+    display: none;
+  }
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/app/learn/page.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .page_menu__deR9h {
   position: fixed;
-  bottom: 0;
-  right: 100%;
+  bottom: -1pt;
+  left: -100%;
   height: calc(100vh - 90px);
   width: 100%;
-  background-color: #f6fbff;
+  background-color: #ebf7ff;
+  transition: right 0.25s ease-in-out;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.page_menu__deR9h ul {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.page_menu__deR9h ul li {
+  position: relative;
+}
+.page_menu__deR9h ul li.page_label__wqe2X {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.page_menu__deR9h ul li h2 {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.page_menu__deR9h ul li ul {
+  display: none;
+  padding: 5px 20px;
+}
+.page_menu__deR9h ul li.page_active__yOzvU ul {
+  display: flex;
+  gap: 10px;
+}
+.page_menu__deR9h ul li.page_active__yOzvU ul li.page_active__yOzvU::before {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fe654f;
 }
 .page_menu__deR9h.page_active__yOzvU {
-  right: 0;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .page_menu__deR9h {
+    left: 0;
+    width: 400px;
+  }
+}
+
+.page_main__cc5Ib {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  height: 900vh;
+}
+.page_main__cc5Ib > section {
+  margin-top: 40px;
+}
+.page_main__cc5Ib section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.page_main__cc5Ib section span {
+  color: #fe654f;
+}
+.page_main__cc5Ib section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.page_main__cc5Ib section h3 {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-top: 35px;
+}
+.page_main__cc5Ib section p {
+  max-width: 600px;
+}
+@media (min-width: 1024px) {
+  .page_main__cc5Ib {
+    left: 400px;
+    width: calc(100% - 400px);
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/codeBlock/index.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.codeBlock_block__A6Nzu {
+  position: relative;
+  background-color: #575757;
+  padding: 15px 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.codeBlock_block__A6Nzu pre {
+  color: #F6FBFF;
+  overflow-x: auto;
+}
+.codeBlock_block__A6Nzu .codeBlock_btn__w9YhL {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+}
+.codeBlock_block__A6Nzu .codeBlock_btn__w9YhL .codeBlock_icon__JPvdZ {
+  height: 20px;
+  width: 20px;
+  fill: #c5c5c5;
+}
+.codeBlock_block__A6Nzu .codeBlock_btn__w9YhL.codeBlock_active__ehr1Q {
+  display: block;
 }

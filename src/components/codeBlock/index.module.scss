@@ -1,0 +1,36 @@
+
+@import '../../styles/vars.scss';
+
+.block {
+    position: relative;
+    background-color: $codeblock-color;
+    padding: 15px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    
+    pre {
+        color: $background-color-light;
+        overflow-x: auto;
+    }
+
+    .btn {
+        display: none;
+        position: absolute;
+        right: 10px;
+        background: none;
+        border: none;
+
+        .icon {
+            height: 20px;
+            width: 20px;
+            fill: $codeblock-icon-color;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}

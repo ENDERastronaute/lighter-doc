@@ -15,7 +15,7 @@
 .filledBtn_btn__qQPZ9 span {
   display: inline-block;
   position: relative;
-  color: #f6fbff;
+  color: #F6FBFF;
 }
 .filledBtn_btn__qQPZ9 span::after {
   content: "";
@@ -25,7 +25,7 @@
   width: 100%;
   height: 2px;
   transform: scaleX(0);
-  background-color: #f6fbff;
+  background-color: #F6FBFF;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -41,7 +41,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: #f6fbff;
+  background-color: #F6FBFF;
   z-index: 1;
   left: 0;
   top: 0;
@@ -180,7 +180,7 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .outlinedBtn_btn__cZlD3 {
   border: 2pt solid #fe654f;
-  background-color: #f6fbff;
+  background-color: #F6FBFF;
   text-decoration: none;
   font-size: 1.2em;
   height: 50px;
@@ -223,8 +223,8 @@
   align-items: center;
   justify-content: center;
   background-color: #fe654f;
-  color: #f6fbff;
+  color: #F6FBFF;
 }
 .info_header__Wz7ly a {
-  color: #f6fbff;
+  color: #F6FBFF;
 }

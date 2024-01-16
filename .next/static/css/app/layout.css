@@ -93,8 +93,14 @@
   margin: 0;
   box-sizing: border-box;
   color: #1E1E1E;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  background-color: #f6fbff;
+  background-color: #F6FBFF;
+}
+
+p {
+  color: #555555;
 }

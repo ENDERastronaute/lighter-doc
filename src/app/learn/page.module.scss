@@ -1,15 +1,123 @@
 
 @import '../../styles/vars.scss';
 
+$menu-width: 400px;
+
 .menu {
     position: fixed;
-    bottom: 0;
-    right: 100%;
+    bottom: -1pt;
+    left: -100%;
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: $background-color-light;
+    background-color: $background-color-light-2;
+    transition: right .25s ease-in-out;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    ul {
+        padding: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            position: relative;
+
+            &.label {
+                font-size: 1.7em;
+                font-weight: bold;
+            }
+
+            h2 {
+                position: relative;
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+
+            ul {
+                display: none;
+                padding: 5px 20px;
+            }
+
+            &.active {
+                ul {
+                    display: flex;
+                    gap: 10px;
+
+                    li.active::before {
+                        position: absolute;
+                        left: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        content: '';
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        background-color: $primary-color-light;
+                    }
+                }
+            }
+        }
+    }
 
     &.active {
-        right: 0;
+        left: 0;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        left: 0;
+        width: $menu-width;
+    }
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    height: 900vh;
+
+    & > section {
+        margin-top: 40px;
+    }
+
+    section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+
+        span {
+            color: $primary-color-light;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            font-weight: 500;
+            margin-top: 35px;
+        }
+
+        p {
+            max-width: 600px;
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        left: $menu-width;
+        width: calc(100% - $menu-width);
     }
 }

@@ -1,12 +1,19 @@
 
+@import '../styles/vars.scss';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     color: #1E1E1E;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
-    background-color: #f6fbff;
+    background-color: $background-color-light;
+}
+
+p {
+    color: #555555;
 }

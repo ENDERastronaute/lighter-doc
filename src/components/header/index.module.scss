@@ -1,4 +1,6 @@
 
+@import '../../styles/vars.scss';
+
 .header {
     display: flex;
     align-items: center;
@@ -6,13 +8,14 @@
     height: 90px;
     width: 100%;
     padding: 0 10px;
+    border-bottom: 1pt solid $primary-color-light;
 
     h2 {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 2em;
-        background: linear-gradient(to bottom, #fed18c, #fe654f);
+        background: linear-gradient(to bottom, $secondaty-color-light, $primary-color-light);
         background-clip: text;
         -moz-background-clip: text;
         -webkit-background-clip: text;
@@ -28,6 +31,10 @@
         .icon {
             height: 48px;
             width: 48px;
+        }
+
+        @media (min-width: $breakpoint-large) {
+            display: none;
         }
     }
 }

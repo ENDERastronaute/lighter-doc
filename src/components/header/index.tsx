@@ -11,7 +11,7 @@ interface HeaderProps {
 export default function Header({ showMenu, handleMenu }: HeaderProps) {
     return (
         <header className={styles.header}>
-            <h2><Image src={logo} alt="logo" width={50} height={50}></Image> Lighter</h2>
+            <a href="/lighter-doc"><h2><Image src={logo} alt="logo" width={50} height={50}></Image> Lighter</h2></a>
             <button onClick={handleMenu}><MenuIcon className={styles.icon}></MenuIcon></button>
         </header>
     )
