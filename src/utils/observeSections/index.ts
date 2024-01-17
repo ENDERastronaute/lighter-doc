@@ -14,25 +14,21 @@ export default function observeSections(setActiveSection: any, styles: any) {
         
     }, { threshold: 1.0 });
     
-    document.querySelectorAll('section.navigable').forEach(section => {
+    document.querySelectorAll('section.navigable').forEach((section: Element) => {
         sectionsObserver.observe(section);
     });
 
-    document.querySelectorAll('ul.navul').forEach((ul: any) => {
+    document.querySelectorAll('ul.navul').forEach((ul: Element) => {
         const ulObserver = new MutationObserver(() => {
-            const hasActiveItem = Array.from(ul.children[0].childNode).some((li: any) => li.classList.contains('active'));      
-            
-            console.log(hasActiveItem);
-            
+            const hasActiveItem = Array.from(ul.children).some((li: any) => li.classList.contains(styles.active));
 
-            if (hasActiveItem && !ul.parentElement.classList.contains(styles.active)) {
-                console.log('on');
-                
-                ul.parentElement.classList.toggle(styles.active);
+            if (hasActiveItem) {          
+                ul.parentElement?.classList.add(styles.active);
             }
             else {
-                ul.parentElement.classList.remove(styles.active);
+                ul.parentElement?.classList.remove(styles.active);
             }
+
         });
 
         ulObserver.observe(ul, { attributes: true, subtree: true });

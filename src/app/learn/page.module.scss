@@ -76,6 +76,7 @@ $menu-width: 400px;
 }
 
 .main {
+    margin-top: $header-height;
     position: relative;
     display: flex;
     align-items: center;

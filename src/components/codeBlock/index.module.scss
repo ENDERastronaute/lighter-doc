@@ -1,6 +1,10 @@
 
 @import '../../styles/vars.scss';
 
+$codeblock-color: #575757;
+$icon-color: #c5c5c5;
+$icon-hover-color: #999999;
+
 .block {
     position: relative;
     background-color: $codeblock-color;
@@ -26,7 +30,11 @@
         .icon {
             height: 20px;
             width: 20px;
-            fill: $codeblock-icon-color;
+            fill: $icon-color;
+        }
+
+        &:hover .icon {
+            fill: $icon-hover-color;
         }
 
         &.active {

@@ -95,6 +95,7 @@
   color: #1E1E1E;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
