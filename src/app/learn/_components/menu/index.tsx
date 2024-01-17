@@ -33,8 +33,9 @@ export default function Menu({ showMenu, activeSection }: MenuProps) {
                     <ListLink href='#install-composer' activeSection={activeSection}>Composer</ListLink>
                     <ListLink href='#install-git' activeSection={activeSection}>Git</ListLink>
                 </ListItem>
-                <ListItem title='Setup' handleClick={handleClick}>
-                    <ListLink href='#init' activeSection={activeSection}>Init</ListLink>
+                <ListItem title='Routes' handleClick={handleClick}>
+                    <ListLink href='#basic' activeSection={activeSection}>Basic</ListLink>
+                    <ListLink href='#mvc' activeSection={activeSection}>MVC</ListLink>
                 </ListItem>
             </ul>
         </menu>

@@ -4,7 +4,8 @@ import styles from '../../page.module.scss';
 import OutlinedBtn from '@/components/button/outlinedBtn';
 import Image from 'next/image';
 
-import testImage from '@public/LighterLogo.svg';
+import reactImage from '@public/react_logo.png';
+import codeImage from '@public/code_exemple.png';
 
 export default function Main() {
     return (
@@ -30,16 +31,19 @@ export default function Main() {
                     <div>
                         <span>
                             <h2>Full control over your project</h2>
-                            <p>Lighter makes it faster to create projects while still allowing the greatest control over what is done. With lighter you know what is done, nothing is magic.</p>
+                            <p>
+                                Lighter is designed with transparency and simplicity in mind, ensuring that there's no "magic" happening behind the scenes.
+                                Instead, each part of the process is clear and understandable, allowing you to see exactly how your application is functioning.
+                            </p>
                         </span>
 
                         <OutlinedBtn text='Learn more' href='/documentation#fullcontrol'></OutlinedBtn>
                     </div>
 
-                    <Image className={styles.image} src={testImage} alt='Exemple of code' priority={true}></Image>
+                    <Image className={styles.image} src={codeImage} alt='Exemple of code' priority={true}></Image>
                 </article>
                 <article>
-                    <Image className={styles.image} src={testImage} alt='Schema of customizations'></Image>
+                    <Image className={styles.image} src={reactImage} alt='Schema of customizations' priority={true}></Image>
 
                     <div>
                         <span>

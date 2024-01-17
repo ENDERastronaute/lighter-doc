@@ -20,7 +20,7 @@ export default function Info() {
     return (
         <>
             {
-                latestRelease && <header className={styles.header}>{latestRelease.name} is out!&nbsp; <Link href={`https://github.com/ENDERastronaute/Lighter/releases/tag/${latestRelease.tag_name}`}>Go check it out!</Link></header>
+                latestRelease && <header className={styles.header}>{latestRelease.name} is out!&nbsp; <Link href={`https://github.com/ENDERastronaute/Lighter/releases/tag/${latestRelease.tag_name}`} target='_blank' rel='noopener noreferrer'>Go check it out!</Link></header>
             }
         </>
     )

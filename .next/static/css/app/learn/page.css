@@ -160,7 +160,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 .codeBlock_block__A6Nzu pre {
   color: #F6FBFF;
@@ -183,4 +183,12 @@
 }
 .codeBlock_block__A6Nzu .codeBlock_btn__w9YhL.codeBlock_active__ehr1Q {
   display: block;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/exemple/index.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.exemple_exemple__2X2aH {
+  background-color: #ebf7ff;
+  color: #fe654f;
+  padding: 1px 5px;
 }

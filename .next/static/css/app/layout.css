@@ -98,6 +98,11 @@
   scroll-behavior: smooth;
 }
 
+.link {
+  text-decoration: underline;
+  color: #fe654f;
+}
+
 body {
   background-color: #F6FBFF;
 }

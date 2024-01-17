@@ -11,6 +11,11 @@
     scroll-behavior: smooth;
 }
 
+.link {
+    text-decoration: underline;
+    color: $primary-color-light;
+}
+
 body {
     background-color: $background-color-light;
 }

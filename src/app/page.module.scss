@@ -129,8 +129,10 @@
             }
 
             .image {
-                width: 50%;
+                width: 512px;
+                height: auto;
                 display: none;
+                border-radius: 15px;
 
                 @media (min-width: $breakpoint-large) {
                     display: flex;
